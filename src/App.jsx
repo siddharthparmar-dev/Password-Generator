@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect, useRef} from 'react'
+import background from "./background.png"
 
 const App = () => {
 
@@ -36,7 +37,7 @@ useEffect(() => { passwordGenerator()}, [length, numberAllowed, charAllowed,pass
 
   return (
     <div className='w-full h-screen bg-no-repeat bg-cover'
-     style={{backgroundImage: `url('https://wallpapers.com/images/hd/hacker-background-nxb1xld1uajt6wsg.jpg')`}}>
+     style={{backgroundImage: `url(${background})`}}>
    <div className=' h-screen w-full flex justify-center items-center'>
     <div className='w-[700px] bg-black/60 px-8 py-8 backdrop-blur-2xl rounded-xl'>
       <h1 className='text-white text-2xl font-semibold text-center mb-1'>Complex Password generator</h1>
